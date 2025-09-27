@@ -1,0 +1,52 @@
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* stack header, content, footer */
+}
+
+/* main content area grows and pushes footer down */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* fullscreen map inside main */
+.fullscreen {
+  flex: 1;
+  height: 100%; 
+  width: 100%;
+}
+
+/* footer always at bottom */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+/* Fill screen */
+.map-fullscreen {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Overlay message while waiting for location/permission */
+.map-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font: 500 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #fff;
+  background: rgba(0,0,0,0.35);
+  text-align: center;
+  padding: 16px;
+  pointer-events: none; /* don’t block map interactions */
+}
+
