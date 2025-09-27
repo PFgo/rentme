@@ -39,7 +39,7 @@ export default function MyMap() {
         <Map
           defaultCenter={position}
           defaultZoom={18}
-         /* disableDefaultUI */ 
+          disableDefaultUI 
           mapId="ca7c3a2dc251241bacdc61c3"
         >
           <AdvancedMarker position={position}>
