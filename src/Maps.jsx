@@ -38,7 +38,7 @@ export default function MyMap() {
       <div className="fullscreen">
         <Map
           defaultCenter={position}
-          zoom={18}
+          defaultZoom={18}
          /* disableDefaultUI */ 
           mapId="ca7c3a2dc251241bacdc61c3"
         >
