@@ -93,8 +93,8 @@ export default function MyMap() {
                 src={user.image}
                 alt={user.name}
                 style={{
-                  width: "100px",
-                  height: "100px",
+                  width: "50px",
+                  height: "50px",
                   borderRadius: "12px",
                   border: "3px solid #1E90FF",
                   boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
