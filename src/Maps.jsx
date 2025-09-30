@@ -41,17 +41,12 @@ const profiles = [
 ];
 
 
-
-
-
-
-
 export default function MyMap() {
   const apiKey = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
   const [position, setPosition] = useState(null);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
+  /* useEffect(() => {
     if (!navigator.geolocation) {
       setError("Geolocation is not supported by this browser.");
       return;
@@ -76,6 +71,7 @@ export default function MyMap() {
   if (!position) {
     return <p>📍 Requesting your location...</p>;
   }
+    */
 
   // Once we have position, render the map
   return (
