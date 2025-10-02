@@ -1,20 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import MyMap from './Maps'
-import Footer from './Footer' 
+// src/App.jsx
+import "./App.css";
+import MyMap from "./Maps";
+import Footer from "./Footer";
+import Header from "./Header.jsx"; // Import the new Header component
 
-function App() {
 
+export default function App() {
+  
 
   return (
     <>
-    <header className="header">
-    <h1>Rent Me</h1>
-    </header>
-    <MyMap/>
-    <Footer/>
-    </>
-  )
-}
+      <Header /> {/* Use the extracted Header component */}
 
-export default App
+      <main>
+        <MyMap />
+      </main>
+
+      <Footer />
+    </>
+  );
+}
