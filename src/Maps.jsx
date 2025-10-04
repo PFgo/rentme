@@ -46,6 +46,7 @@ export default function MyMap() {
   const [position, setPosition] = useState(null);
   const [error, setError] = useState(null);
 
+  /*
    useEffect(() => {
     if (!navigator.geolocation) {
       setError("Geolocation is not supported by this browser.");
@@ -71,6 +72,7 @@ export default function MyMap() {
   if (!position) {
     return <p>📍 Requesting your location...</p>;
   }
+    */
     
 
   // Once we have position, render the map
@@ -78,7 +80,7 @@ export default function MyMap() {
     <APIProvider apiKey={apiKey}>
       <div className="fullscreen">
         <Map
-          defaultCenter={position} /* remember to change back to position   */
+          defaultCenter={{lat: 47.6529595, lng: -122.3128423 }} /* remember to change back to position   */
           defaultZoom={17}
           disableDefaultUI 
           mapId="ca7c3a2dc251241bacdc61c3"
